@@ -28,6 +28,10 @@ p {
   line-height: 32px;
 }
 
+.mobile {
+  display: none;
+}
+
 span {
   display: inline-block;
   width: 6.3px;
@@ -82,7 +86,13 @@ span {
 
 .brandlg {
   width: 60%;
+  height: 100%;
+}
+
+.borderline {
+  width: 100%;
   height: 60%;
+  border-right: 1px solid #c7c8c9;
 }
 
 .cpart02,.cpart04 {
@@ -106,7 +116,7 @@ span {
 .vipequity {
   display: flex;
   position: absolute;
-  top: 236px;
+  top: 220px;
   padding: 0 100px;
 }
 
@@ -142,9 +152,10 @@ span {
 .hrequity_bottom_img {
   padding: 0 80px 43.93px;
   display: flex;
+  justify-content: center;
 }
 
-.hrequity_bottom_img img:nth-child(2){
+.hrequity_bottom_img a:nth-child(2){
   padding: 0 26px;
 }
 
@@ -205,6 +216,11 @@ span {
   width: 100%;
 }
 
+.hrequity_bottom_dot_ul li img {
+  width: 43.75px;
+  height: 34.529px;
+}
+
 .step_top {
   position: relative;
 
@@ -216,8 +232,9 @@ span {
 }
 
 .svgon {
-  transform: rotateX(180deg);
+  transform: rotate(180deg);
   color: #c7c8c9;
+  transition: all 0.5s ease 0s;
 }
 
 .hengxian {
@@ -316,6 +333,384 @@ span {
   color: #FF921D;
 }
 
+.erweima {
+  display: none;
+  width: 365px;
+  height: 400px;
+  position: absolute;
+  top: -423px;
+  left: 0;
+}
 
+.erweima img,.quanyiimg {
+  width: 100%;
+  height: 100%;
+}
 
+.quanyilink {
+  display: block;
+  width: 393px;
+  height: 460px;
+}
 
+.content {
+  overflow: hidden;
+}
+
+@media screen and (max-width:1600px) {
+  .cpart01 {
+    max-width: 100vw;
+  }
+  
+  .mySwiper2 {
+    height: 5.2083vw;
+  }
+  
+  .pc_content {
+    max-width: 72.916vw;
+  }
+  
+  .part02_part {
+    height: 31.25vw;
+  }
+  
+  .vipequity {
+    top: 11.292vw;
+    padding: 0 5.208vw;
+  }
+  
+  .vipimgdiv {
+    padding: 1.041667vw;
+  }
+  
+  .vipimg {
+    width: 18.854vw;
+    height: 15.833vw;
+  }
+  
+  .hrequity_top {
+    padding: 3.28125vw 3.125vw 1.875vw;
+  }
+  
+  .hrtitle {
+    font-size: 1.5625vw;
+  }
+  
+  .hrequity_bottom_img {
+    padding: 0 4.16667vw 2.288vw;
+  }
+  
+  .hrequity_bottom_img img:nth-child(2){
+    padding: 0 1.3542vw;
+  }
+  
+  .hrequity_bottom_dot_ul li {
+    width: 7.1354vw;
+    height: 7.1354vw;
+    padding: 0 0.625vw;
+  }
+
+  .hrequity_bottom_dot_ul li img {
+    width: 2.2786vw;
+    height: 1.7984vw;
+  }
+
+  .quanyilink {
+    width: 20.46875vw;
+    height: 23.9583vw;
+  }
+
+  .hrequity_bottom_img a:nth-child(2) {
+    padding: 0 1.354167vw;
+}
+
+.hrequity_bottom_dot_ul {
+  padding: 0 5.20833vw;
+}
+
+.dottitel {
+  font-size: 0.9375vw;
+  line-height: 1.25vw;
+  padding: 1.14583vw 0;
+}
+
+.dottitel_p {
+  font-size: 0.729167vw;
+}
+
+p {
+  line-height: 1.6667vw;
+  font-size: 0.9375vw;
+}
+
+.part03_part,.part04_part {
+  height: auto;
+}
+
+.appbtn {
+  width: 6.979167vw;
+  height: 1.875vw;
+}
+
+.part04_tab {
+  padding: 0 3.125vw 1.875vw;
+}
+
+.tab {
+  width: 16.71875vw;
+}
+
+.tabimg {
+  margin-bottom: 9px;
+  width: 10.9375vw;
+  height: 3.59375vw;
+}
+
+.tab_title {
+  font-size: 1.25vw;
+}
+
+.tab_ititle {
+  font-size: 1.09375vw;
+  line-height: 1.875vw;
+}
+
+.step_bottom {
+  padding: 1.041667vw 0 1.5625vw;
+  margin-bottom: 3.125vw;
+}
+
+.erweima {
+  width: 19.0104vw;
+  height: 20.8333vw;
+  top: -22.03125vw;
+}
+
+.cpart05_part img{
+  width: 72.916vw;
+  height: 13.02083vw;
+}
+
+.jointly img {
+  width: 15.625vw;
+  height: 13.286vw;
+}
+
+span {
+  width: 0.328125vw;
+  height: 0.328125vw;
+  margin-right: 0.729167vw;
+}
+}
+
+@media screen and (max-width:900px){
+  .pc,.mySwiper2 {
+    display: none !important;
+  }
+
+  .mobile {
+    display: flex !important;
+  }
+
+  .pc_content {
+    min-width: 100vw;
+    margin: 0;
+  }
+
+  .part02_part {
+    background-image: url(../images/mobile/会员卡底图-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 55.555vw;
+    overflow-x: scroll;
+  }
+
+  .vipimg {
+    width: 55.555vw;
+    height: 46.6667vw;
+}
+
+.vipequity {
+  margin-left: -42vw;
+}
+
+.hrtitle {
+  font-size: 5.555vw;
+}
+
+.mbhrtitle {
+  font-size: 4.444vw;
+}
+
+.quanyilink {
+  width: 28.1262vw;
+  height: 36.4724vw;
+}
+
+.hrequity_top {
+  padding: 7.28125vw 3.125vw 5.875vw;
+}
+
+.hrequity_bottom_dot_ul li img {
+  width: 4.83333vw;
+  height: 3.7037vw;
+}
+
+.dottitel {
+  font-size: 2.777778vw;
+  line-height: 4.25vw;
+}
+
+.dottitel_p {
+  font-size: 2.2222vw;
+}
+
+.hrequity_bottom_dot_ul li {
+  width: 19.1354vw;
+  height: 15.1354vw;
+  padding: 2vw 1.625vw;
+}
+
+.hrequity_bottom_dot_ul {
+  flex-flow: wrap;
+  padding: 0 5.20833vw 4vw;
+}
+
+.part04_tab {
+  padding: 0 3.125vw 1.875vw;
+  flex-direction: column;
+}
+
+.tab {
+  width: 100%;
+  border: none;
+  height: auto;
+  flex-flow: wrap;
+  padding: 0 2vw;
+}
+
+.tabimg {
+  margin-bottom: 9px;
+  width: 41.3572vw;
+  height: 13.1511vw;
+  background-size: contain;
+  margin: 0 2vw;
+}
+
+.appli1 {
+  background-image: url(../images/mobile/应用场景按钮-01.png);
+}
+
+.appli2 {
+  background-image: url(../images/mobile/应用场景按钮-05.png);
+}
+
+.appli3 {
+  background-image: url(../images/mobile/应用场景按钮-06.png);
+}
+
+.appli4 {
+  background-image: url(../images/mobile/应用场景按钮-07.png);
+}
+
+.tab_title {
+  font-size: 5.5555vw;
+}
+
+.tab_ititle {
+  font-size: 3.7037vw;
+  line-height: 9.875vw;
+}
+
+.step_bottom {
+  padding: 1.041667vw 0 1.5625vw;
+  margin-bottom: 3.125vw;
+  display: block;
+}
+
+p {
+  line-height: 6.6667vw;
+  font-size: 3.7037vw;
+}
+
+span {
+  width: 1.328125vw;
+  height: 1.328125vw;
+  margin-right: 2.729167vw;
+}
+
+.hengxian {
+  width: 100%;
+  background: #c7c8c9;
+  height: 2px;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+}
+
+.step.on::before {
+  width: 100%;
+}
+
+.step::before {
+  width: 70px;
+  left: 0;
+  height: 2px;
+}
+
+.step_left {
+  border: none;
+}
+
+.pad48 {
+  padding: 20px 0 0 22px;
+  width: 91%;
+}
+
+.fa {
+  top: 13px;
+}
+
+.cpart05_part img {
+  width: 100%;
+  height: 58.0225vw;
+}
+
+.jointly img {
+  width: 55.5555vw;
+  height: 49.38787vw;
+  margin-left: 4vw;
+}
+
+.jointly p {
+  font-size: 3.3333vw;
+  line-height: 4.6667vw;
+}
+
+.origcolor {
+  font-size: 4.4444vw !important;
+  line-height: 6.6667vw !important;
+}
+
+.appbtn {
+  width: 28.894vw;
+  height: 7.97398vw;
+}
+
+.erweima {
+  width: 48.0104vw;
+  height: 55.8333vw;
+  top: -60.03125vw;
+  left: 40%;
+}
+
+.mhrequity_bottom_img {
+  padding:0 4.16667vw 2.288vw;
+  justify-content: center;
+}
+
+.mhrequity_bottom_img a:nth-child(2){
+  padding: 0 26px;
+}
+}

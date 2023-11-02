@@ -3,9 +3,6 @@ $(document).ready(function(){
    $('.vipimgdiv').hover(function(){
     $(this).children('.vipimg').addClass('scaleimg');
     $(this).siblings().children('.vipimg').removeClass('scaleimg');
-    $('.hrpart').css('display','block');
-    $('.v1part').css('display','none');
-    $('.v2part').css('display','none');
     },function(){
         $(this).removeClass('scaleimg');
     })
@@ -16,8 +13,6 @@ $(document).ready(function(){
         $('.v1part').css('display','block');
         $('.hrpart').css('display','none');
         $('.v2part').css('display','none');
-        },function(){
-            $(this).removeClass('scaleimg');
         })
 
     $('.vipimgthree').hover(function(){
@@ -25,9 +20,13 @@ $(document).ready(function(){
         $('.v2part').css('display','block');
         $('.hrpart').css('display','none');
         $('.v1part').css('display','none');
-        },function(){
-         $(this).removeClass('scaleimg');
-         })
+        })
+    
+    $('.vipimgone').hover(function(){
+        $('.v2part').css('display','none');
+        $('.hrpart').css('display','block');
+        $('.v1part').css('display','none');
+        })
 
         //  切换应用场景
     $('.appli2').click(function(){
@@ -84,4 +83,45 @@ $(document).ready(function(){
         $(this).find('.step_top').find('.fa').find('svg path').attr('fill','#c7c8c9');
         $(this).siblings().find('.step_top').find('.fa').find('svg path').attr('fill','#FF921D');
         })
+
+        // 点击详情咨询弹出二维码
+        $('.clickererima').click(function(){
+            $('.erweima').css('display','block')
+        })
+        
+        $(window).scroll(function(){
+            $('.erweima').css('display','none')
+        })
+
+        var winWidth = window.screen.width;
+        // alert(winWidth);
+        if (winWidth <= 900){
+            $('.step').hover(function(){
+                $(this).children('.step_bottom').css('display','block');
+                })
+                $('.appli2').click(function(){
+                    $('.appli1').css('background-image','url(./images/mobile/应用场景按钮-05.png)');
+                    $('.appli2').css('background-image','url(./images/mobile/应用场景按钮-02.png)');
+                    $('.appli3').css('background-image','url(./images/mobile/应用场景按钮-07.png)');
+                    $('.appli4').css('background-image','url(./images/mobile/应用场景按钮-08.png)');
+                })
+                $('.appli3').click(function(){
+                    $('.appli1').css('background-image','url(./images/mobile/应用场景按钮-05.png)');
+                    $('.appli2').css('background-image','url(./images/mobile/应用场景按钮-06.png)');
+                    $('.appli3').css('background-image','url(./images/mobile/应用场景按钮-03.png)');
+                    $('.appli4').css('background-image','url(./images/mobile/应用场景按钮-08.png)');
+                })
+                $('.appli4').click(function(){
+                    $('.appli1').css('background-image','url(./images/mobile/应用场景按钮-05.png)');
+                    $('.appli2').css('background-image','url(./images/mobile/应用场景按钮-06.png)');
+                    $('.appli3').css('background-image','url(./images/mobile/应用场景按钮-07.png)');
+                    $('.appli4').css('background-image','url(./images/mobile/应用场景按钮-04.png)');
+                })
+                $('.appli1').click(function(){
+                    $('.appli1').css('background-image','url(./images/mobile/应用场景按钮-01.png)');
+                    $('.appli2').css('background-image','url(./images/mobile/应用场景按钮-06.png)');
+                    $('.appli3').css('background-image','url(./images/mobile/应用场景按钮-07.png)');
+                    $('.appli4').css('background-image','url(./images/mobile/应用场景按钮-08.png)');
+                })
+        }
   });
