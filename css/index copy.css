@@ -1,0 +1,151 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+.cpart01 {
+  max-width: 100vw;
+  margin: auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-1,.banner-2,.banner-3 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-1 {
+    background-image: url(../images/banner-01.jpg);
+}
+
+.banner-2 {
+    background-image: url(../images/banner-02.jpg);
+}
+
+.mySwiper2 {
+  height: 5.2083vw;
+}
+
+.brandlg {
+  width: 70%;
+  height: 70%;
+}
+
+.cpart02 {
+  background-color: #F6F7F7;
+}
+
+.pc_content {
+  max-width: 72.916vw;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.part02_part {
+  height: 31.25vw;
+  background-image: url(../images/会员卡底图-01.jpg);
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.vipequity {
+  display: flex;
+  position: absolute;
+  top: 11.292vw;
+  padding: 0 5.208vw;
+}
+
+.vipimgdiv {
+  padding: 1.041667vw;
+}
+
+.vipimg {
+  width: 18.854vw;
+  height: 15.833vw;
+}
+
+.cpart03 {
+  background-color: #fff;
+}
+
+.part03_part {
+  height: auto;
+}
+
+.hrequity_top {
+  padding: 3.28125vw 3.125vw 1.875vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hrtitle {
+  font-size: 1.5625vw;
+  color: #FF921D;
+}
+
+.hrequity_bottom_img {
+  padding: 0 4.16667vw 2.288vw;
+  display: flex;
+}
+
+.hrequity_bottom_img img:nth-child(2){
+  padding: 0 1.3542vw;
+}
+
+.hrequity_bottom_dot_ul {
+  display: flex;
+}
+
+.hrequity_bottom_dot_ul li {
+  width: 7.1354vw;
+  height: 7.1354vw;
+  text-align: center;
+}
+
+.dottitel {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 22px 0 22px;
+}
+
+.dottitel_p {
+  font-size: 14px;
+}

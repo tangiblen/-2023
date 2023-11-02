@@ -1,0 +1,321 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+span {
+  display: inline-block;
+  width: 6.3px;
+  height: 6.3px;
+  background-color: #FF921D;
+  border-radius: 100%;
+  margin-right: 14px;
+}
+
+.cpart01 {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-1,.banner-2,.banner-3 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-1 {
+    background-image: url(../images/banner-01.jpg);
+}
+
+.banner-2 {
+    background-image: url(../images/banner-02.jpg);
+}
+
+.bannerlength {
+  width: 239.165 px;
+  height: 100px;
+}
+
+.mySwiper2 {
+  height: 100px;
+}
+
+.brandlg {
+  width: 60%;
+  height: 60%;
+}
+
+.cpart02,.cpart04 {
+  background-color: #F6F7F7;
+}
+
+.pc_content {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.part02_part {
+  height: 600px;
+  background-image: url(../images/会员卡底图-01.jpg);
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.vipequity {
+  display: flex;
+  position: absolute;
+  top: 236px;
+  padding: 0 100px;
+}
+
+.vipimgdiv {
+  padding: 20px;
+}
+
+.vipimg {
+  width: 362px;
+  height: 304px;
+  transition:0.5s
+}
+
+.cpart03 {
+  background-color: #fff;
+}
+
+.part03_part {
+  height: 800px;
+}
+
+.hrequity_top {
+  padding: 63px 60px 36px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hrtitle {
+  font-size: 30px;
+  color: #FF921D;
+}
+
+.hrequity_bottom_img {
+  padding: 0 80px 43.93px;
+  display: flex;
+}
+
+.hrequity_bottom_img img:nth-child(2){
+  padding: 0 26px;
+}
+
+.hrequity_bottom_dot_ul {
+  display: flex;
+  padding: 0 100px;
+}
+
+.hrequity_bottom_dot_ul li {
+  width: 137px;
+  height: 137px;
+  text-align: center;
+  padding: 0 12px;
+}
+
+.dottitel {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 22px 0;
+}
+
+.dottitel_p {
+  font-size: 14px;
+}
+
+.v1part,.v2part {
+  display: none;
+}
+
+.scaleimg {
+  transform: scale(1.15);
+  transition:0.5s
+}
+
+.part04_part {
+  height: 800px;
+}
+
+.part04_tab {
+  display: flex;
+  padding: 0 60px 36px;
+}
+
+.step_left {
+  width: 60%;
+  border-right: 1px solid #c7c8c9;
+}
+
+.step_right {
+  width: 50%;
+}
+
+.tab_title {
+  font-size: 24px;
+}
+
+.tabcontent {
+  width: 100%;
+}
+
+.step_top {
+  position: relative;
+
+}
+
+.step {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.svgon {
+  transform: rotateX(180deg);
+  color: #c7c8c9;
+}
+
+.hengxian {
+  width: 96%;
+  background: #c7c8c9;
+  height: 3px;
+  position: absolute;
+  bottom: -16px;
+  left: 42px;
+}
+
+.step::before {
+  content: "";
+  display: inline-block;
+  width: 70px;
+  height: 3px;
+  background: #FF921D;
+  position: absolute;
+  bottom: -16px;
+  left: 42px;
+  transition: all 0.5s ease;
+  -webkit-transform: all 0.5s ease;
+  z-index: 1;
+}
+
+.step.on::before {
+  width: 96%;
+  transition: all 0.5s ease;
+  -webkit-transform: all 0.5s ease;
+}
+
+.pad48 {
+  padding: 0 0 0 42px;
+}
+
+.tab_ititle {
+  font-size: 21px;
+  line-height: 36px;
+}
+
+.step_bottom {
+  display: flex;
+  /* display: none; */
+  padding: 20px 0 30px;
+  margin-bottom: 60px;
+}
+
+.fa {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  width: 321px;
+  border-right: 1px solid #c7c8c9;
+  height: 596px;
+}
+
+.tabimg {
+  margin-bottom: 9px;
+  width: 210px;
+  height: 69px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease 0s;
+}
+
+.appli1 {
+  background-image: url(../images/应用场景按钮-01.png);
+}
+
+.appli2 {
+  background-image: url(../images/应用场景按钮-06.png);
+}
+
+.appli3 {
+  background-image: url(../images/应用场景按钮-07.png);
+}
+
+.appli4 {
+  background-image: url(../images/应用场景按钮-08.png);
+}
+
+.appli2_content,.appli3_content,.appli4_content {
+  display: none;
+}
+
+.jointly {
+  text-align: center;
+}
+
+.origcolor {
+  color: #FF921D;
+}
+
+
+
+
