@@ -78,10 +78,10 @@
                 </div>
             </div>
             <div class="part02_part mobile">
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper swiper-container">
                     <div class="swiper-wrapper">
-                    <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-02.png" alt="" class="vipimg vipimgtwo"></div></div>
                     <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-01.png" alt="" class="vipimg vipimgone"></div></div>
+                    <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-02.png" alt="" class="vipimg vipimgtwo"></div></div>
                     <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-03.png" alt="" class="vipimg vipimgthree"></div></div>
                     </div>
                 </div>
@@ -568,19 +568,19 @@
                     </div>
                 </div>
                 <div class="mobile" style="justify-content: space-evenly; padding-bottom: 57px;">
-                        <div class="swiper mySwiper">
+                        <div class="swiper mySwiper swiper-container">
                             <div class="swiper-wrapper">
-                            <div class="swiper-slide"><div class="jointly">
-                                <img src="./images/联名会员卡-02.png" alt="">
-                                    <p>DDI知识派 × 培伴联名卡</br>
-                                        企业会员￥15600/年</p>
-                                    <p class="origcolor">立省￥10360</p>
-                            </div></div>
                             <div class="swiper-slide"><div class="jointly">
                                 <img src="./images/联名会员卡-01.png" alt="">
                                     <p>DDI知识派 × HRflag联名卡</br>
                                     企业会员￥30000/年</p>
                                     <p class="origcolor">立省￥7808</p>
+                            </div></div>
+                            <div class="swiper-slide"><div class="jointly">
+                                <img src="./images/联名会员卡-02.png" alt="">
+                                    <p>DDI知识派 × 培伴联名卡</br>
+                                        企业会员￥15600/年</p>
+                                    <p class="origcolor">立省￥10360</p>
                             </div></div>
                             <div class="swiper-slide"><div class="jointly">
                                 <img src="./images/联名会员卡-03.png" alt="">
@@ -627,15 +627,18 @@
             }
     });
 
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: "auto",
-      centeredSlides: true,
-      spaceBetween: 30,
-      pagination: {
+    var swiper = new Swiper('.swiper-container',{
+		  allowTouchMove: true,
+		  centeredSlides: true,
+		  spaceBetween : 30,
+		  slidesOffsetBefore: 0,
+		  loop: true,
+		  slidesPerView : 'auto',
+          pagination: {
         // el: ".swiper-pagination",
         clickable: true,
-      },
-    });
+        },
+		});
 
     var swiper = new Swiper('.mySwiper2', {
       loop: true,

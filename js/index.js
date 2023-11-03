@@ -132,6 +132,6 @@ $(document).ready(function(){
         }
   });
 
-  $('.swiper-wrapper').eq(3).parent().children().siblings().css('transform','translate3d(-123.75px, 0px, 0px)');
-  $('.swiper-wrapper').eq(4).parent().children().siblings().css('transform','translate3d(-123.75px, 0px, 0px)');
+//   $('.swiper-wrapper').eq(3).parent().children().css('transform','translate3d(-123.75px, 0px, 0px)');
+//   $('.swiper-wrapper').eq(4).parent().children().css('transform','translate3d(-123.75px, 0px, 0px)');
   
