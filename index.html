@@ -11,6 +11,19 @@
     <script src="./js/index.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
 </head>
+<style>
+.swiper-slide {
+  width: 50%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 50%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 50%;
+}
+  </style>
 <body>
     <div class="content">
         <div class="cpart01">
@@ -64,14 +77,23 @@
                     <div class="vipimgdiv"><img src="./images/会员卡-03.png" alt="" class="vipimg vipimgthree"></div>
                 </div>
             </div>
-
             <div class="part02_part mobile">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-02.png" alt="" class="vipimg vipimgtwo"></div></div>
+                    <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-01.png" alt="" class="vipimg vipimgone"></div></div>
+                    <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-03.png" alt="" class="vipimg vipimgthree"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="part02_part mobile">
                 <div class="vipequity">
                     <div class="vipimgdiv"><img src="./images/会员卡-02.png" alt="" class="vipimg vipimgtwo"></div>
                     <div class="vipimgdiv"><img src="./images/会员卡-01.png" alt="" class="vipimg vipimgone"></div>
                     <div class="vipimgdiv"><img src="./images/会员卡-03.png" alt="" class="vipimg vipimgthree"></div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="cpart03">
             <div class="part03_part pc_content">
@@ -546,7 +568,29 @@
                     </div>
                 </div>
                 <div class="mobile" style="justify-content: space-evenly; padding-bottom: 57px;">
-                    <div class="jointly">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide"><div class="jointly">
+                                <img src="./images/联名会员卡-02.png" alt="">
+                                    <p>DDI知识派 × 培伴联名卡</br>
+                                        企业会员￥15600/年</p>
+                                    <p class="origcolor">立省￥10360</p>
+                            </div></div>
+                            <div class="swiper-slide"><div class="jointly">
+                                <img src="./images/联名会员卡-01.png" alt="">
+                                    <p>DDI知识派 × HRflag联名卡</br>
+                                    企业会员￥30000/年</p>
+                                    <p class="origcolor">立省￥7808</p>
+                            </div></div>
+                            <div class="swiper-slide"><div class="jointly">
+                                <img src="./images/联名会员卡-03.png" alt="">
+                                    <p>DDDI知识派畅学卡</br>
+                                        个人会员￥1899/年</p>
+                                    <p class="origcolor">立省￥1788</p>
+                            </div></div>
+                            </div>
+                        </div>
+                    <!-- <div class="jointly">
                         <img src="./images/联名会员卡-02.png" alt="">
                             <p>DDI知识派 × 培伴联名卡</br>
                                 企业会员￥15600/年</p>
@@ -563,11 +607,12 @@
                             <p>DDDI知识派畅学卡</br>
                                 个人会员￥1899/年</p>
                             <p class="origcolor">立省￥1788</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </div>
+    
 </body>
 
 <!-- Initialize Swiper -->
@@ -580,6 +625,16 @@
                 stopOnLastSlide: false,
                 disableOnInteraction: false, //触摸后仍然执行
             }
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        // el: ".swiper-pagination",
+        clickable: true,
+      },
     });
 
     var swiper = new Swiper('.mySwiper2', {

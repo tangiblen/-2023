@@ -123,5 +123,14 @@ $(document).ready(function(){
                     $('.appli3').css('background-image','url(./images/mobile/应用场景按钮-07.png)');
                     $('.appli4').css('background-image','url(./images/mobile/应用场景按钮-08.png)');
                 })
+                $('.swiper-android .swiper-slide, .swiper-wrapper').eq(3).css('transform','translate3d(-123.75px, 0px, 0px)');
+                $('.swiper-android .swiper-slide, .swiper-wrapper').eq(4).css('transform','translate3d(-123.75px, 0px, 0px)');
+
+                $('.vipimgdiv').hover(function(){
+                    $(this).children('.vipimg').removeClass('scaleimg');
+                    $(this).siblings().children('.vipimg').removeClass('scaleimg');
+                    })
         }
+
+        
   });

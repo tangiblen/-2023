@@ -523,7 +523,7 @@ span {
     background-size: cover;
     width: 100%;
     height: 55.555vw;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
   }
 
   .vipimg {
@@ -713,4 +713,13 @@ span {
 .mhrequity_bottom_img a:nth-child(2){
   padding: 0 26px;
 }
+
+.vipimgdiv {
+    padding: 17vw 1.041667vw 1.041667vw;
+}
+
+.swiper-slide {
+  background: transparent;
+}
+
 }
