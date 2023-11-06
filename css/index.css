@@ -13,6 +13,10 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -26,6 +30,7 @@ p {
   margin: 0;
   font-size: 18px;
   line-height: 32px;
+  color: #000;
 }
 
 .mobile {
@@ -116,17 +121,21 @@ span {
 .vipequity {
   display: flex;
   position: absolute;
-  top: 220px;
-  padding: 0 100px;
+  top: 205px;
+  padding: 0 40px;
+}
+
+.lengthli {
+  width: 200px !important;
 }
 
 .vipimgdiv {
-  padding: 20px;
+  padding: 20px 30px 0;
 }
 
 .vipimg {
-  width: 362px;
-  height: 304px;
+  width: 381px;
+  height: 320px;
   transition:0.5s
 }
 
@@ -142,6 +151,7 @@ span {
   padding: 63px 60px 36px;
   display: flex;
   justify-content: space-between;
+  font-weight: 600;
 }
 
 .hrtitle {
@@ -156,7 +166,7 @@ span {
 }
 
 .hrequity_bottom_img a:nth-child(2){
-  padding: 0 26px;
+  margin: 0 26px;
 }
 
 .hrequity_bottom_dot_ul {
@@ -165,7 +175,7 @@ span {
 }
 
 .hrequity_bottom_dot_ul li {
-  width: 137px;
+  width: 150px;
   height: 137px;
   text-align: center;
   padding: 0 12px;
@@ -175,10 +185,12 @@ span {
   font-size: 18px;
   line-height: 24px;
   padding: 22px 0;
+  font-weight: 600;
 }
 
 .dottitel_p {
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .v1part,.v2part {
@@ -186,7 +198,12 @@ span {
 }
 
 .scaleimg {
-  transform: scale(1.15);
+  transform: scale(1.25);
+  transition:0.5s
+}
+
+.minscaleimg {
+  transform: scale(0.8);
   transition:0.5s
 }
 
@@ -202,14 +219,17 @@ span {
 .step_left {
   width: 60%;
   border-right: 1px solid #c7c8c9;
+  padding: 0px 1.364583vw 0 42px;
 }
 
 .step_right {
   width: 50%;
+  padding: 0 0 0 1.364583vw;
 }
 
 .tab_title {
   font-size: 24px;
+  font-weight: 600;
 }
 
 .tabcontent {
@@ -217,13 +237,13 @@ span {
 }
 
 .hrequity_bottom_dot_ul li img {
-  width: 43.75px;
+  width: 40.75px;
   height: 34.529px;
 }
 
 .step_top {
   position: relative;
-
+  padding: 0 0 0 42px;
 }
 
 .step {
@@ -267,7 +287,15 @@ span {
 }
 
 .pad48 {
-  padding: 0 0 0 42px;
+  text-align: justify;
+}
+
+.pad48 ul li:nth-child(1) {
+  width: 120px;
+}
+
+.pad48 ul li:nth-child(2) {
+  width: 268px;
 }
 
 .tab_ititle {
@@ -334,11 +362,23 @@ span {
 }
 
 .erweima {
+  width: 21.0104vw;
+  height: 23.8333vw;
+  position: relative;
+  top: 10vw;
+  /* left: -138px; */
+  left: 40vw;
+}
+
+.popup {
   display: none;
-  width: 365px;
-  height: 400px;
-  position: absolute;
-  top: -423px;
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0,.5);
+  position: fixed;
+  top: 0;
+  /* opacity: .5; */
+  z-index: 9999;
   left: 0;
 }
 
@@ -375,19 +415,31 @@ span {
   }
   
   .vipequity {
-    top: 11.292vw;
-    padding: 0 5.208vw;
+    top: 12.292vw;
+    padding: 0px 3.708vw;
   }
   
   .vipimgdiv {
-    padding: 1.041667vw;
+    padding: 0 1.2667vw;
   }
   
   .vipimg {
     width: 18.854vw;
     height: 15.833vw;
   }
+
+  .step_left {
+    padding: 0px 1.364583vw 0 42px;
+  }
   
+  .lengthlitwop {
+    font-size: 0.8375vw;
+  }
+
+  .step_right {
+    padding: 0 0 0 1.364583vw;
+  }
+
   .hrequity_top {
     padding: 3.28125vw 3.125vw 1.875vw;
   }
@@ -405,8 +457,8 @@ span {
   }
   
   .hrequity_bottom_dot_ul li {
-    width: 7.1354vw;
-    height: 7.1354vw;
+    width: 8.1354vw;
+    height: 8.1354vw;
     padding: 0 0.625vw;
   }
 
@@ -421,21 +473,33 @@ span {
   }
 
   .hrequity_bottom_img a:nth-child(2) {
-    padding: 0 1.354167vw;
+    margin: 0 1.354167vw;
 }
 
 .hrequity_bottom_dot_ul {
   padding: 0 5.20833vw;
 }
 
+.pad48 ul li:nth-child(1) {
+  width: 6vw;
+}
+
+.pad48 ul li:nth-child(2) {
+  width: 15vw;
+}
+
+.lengthli {
+  width: 10vw !important;
+}
+
 .dottitel {
-  font-size: 0.9375vw;
+  font-size: 1.09375vw;
   line-height: 1.25vw;
   padding: 1.14583vw 0;
 }
 
 .dottitel_p {
-  font-size: 0.729167vw;
+  font-size: 0.829167vw;
 }
 
 p {
@@ -458,6 +522,7 @@ p {
 
 .tab {
   width: 16.71875vw;
+  height: 37vw;
 }
 
 .tabimg {
@@ -480,11 +545,11 @@ p {
   margin-bottom: 3.125vw;
 }
 
-.erweima {
+/* .erweima {
   width: 19.0104vw;
   height: 20.8333vw;
   top: -22.03125vw;
-}
+} */
 
 .cpart05_part img{
   width: 72.916vw;
@@ -536,11 +601,11 @@ span {
 }
 
 .hrtitle {
-  font-size: 5.555vw;
+  font-size: 5.1vw;
 }
 
 .mbhrtitle {
-  font-size: 4.444vw;
+  font-size: 4vw;
 }
 
 .quanyilink {
@@ -553,7 +618,7 @@ span {
 }
 
 .hrequity_bottom_dot_ul li img {
-  width: 4.83333vw;
+  width: 3.83333vw;
   height: 3.7037vw;
 }
 
@@ -567,9 +632,9 @@ span {
 }
 
 .hrequity_bottom_dot_ul li {
-  width: 19.1354vw;
-  height: 15.1354vw;
-  padding: 2vw 1.625vw;
+  width: 21.1354vw;
+  height: 18.1354vw;
+  padding: 2vw 0.625vw;
 }
 
 .hrequity_bottom_dot_ul {
@@ -582,6 +647,11 @@ span {
   flex-direction: column;
 }
 
+
+.lengthli {
+  width: 50vw !important;
+}
+
 .tab {
   width: 100%;
   border: none;
@@ -592,7 +662,7 @@ span {
 
 .tabimg {
   margin-bottom: 9px;
-  width: 41.3572vw;
+  width: 40.3572vw;
   height: 13.1511vw;
   background-size: contain;
   margin: 0 2vw;
@@ -629,9 +699,21 @@ span {
   display: block;
 }
 
+.pad48 ul li:nth-child(1) {
+  width: 20vw;
+}
+
+.pad48 ul li:nth-child(2) {
+  width: 67vw;
+}
+
 p {
   line-height: 6.6667vw;
   font-size: 3.7037vw;
+}
+
+.lengthlitwop {
+  font-size: 3vw;
 }
 
 span {
@@ -698,12 +780,12 @@ span {
   height: 7.97398vw;
 }
 
-.erweima {
+/* .erweima {
   width: 48.0104vw;
   height: 55.8333vw;
   top: -60.03125vw;
   left: 40%;
-}
+} */
 
 .mhrequity_bottom_img {
   padding:0 4.16667vw 2.288vw;
@@ -720,6 +802,13 @@ span {
 
 .swiper-slide {
   background: transparent;
+}
+
+.erweima {
+  width: 94.0104vw;
+  height: 104.8333vw;
+  top: 27vw;
+  left: 4vw;
 }
 
 }

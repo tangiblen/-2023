@@ -23,6 +23,19 @@
 .swiper-slide:nth-child(3n) {
   width: 50%;
 }
+
+/* 轮播定制化  --begin*/
+/* .storeActivity-list .swiper-slide{
+    width: 100%!important;
+    margin: 0 5%;
+}
+.swiper-slide-prev{
+    right:8%;
+}
+.swiper-slide-next{
+    left:8%;
+} */
+/* 轮播定制化  --end*/
   </style>
 <body>
     <div class="content">
@@ -30,16 +43,16 @@
             <!-- pc banner轮播 -->
             <div class="swiper mySwiper1 pc">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href=""><img src="./images/banner-01.jpg" alt="" class="banner-1"></a></div>
-                    <div class="swiper-slide"><a href=""><img src="./images/banner-02.jpg" alt="" class="banner-2"></a></div>
+                    <div class="swiper-slide"><a href="https://learn.ddileaf.com/page/4231495" target="_blank"><img src="./images/banner-01.jpg" alt="" class="banner-1"></a></div>
+                    <div class="swiper-slide"><a href="https://learn.ddileaf.com/page/4231495" target="_blank"><img src="./images/banner-02.jpg"  alt="" class="banner-2"></a></div>
                     <div class="swiper-slide"><a href="https://host.huiju.cool/p/b9534" target="_blank"><img src="./images/banner-03.jpg" alt="" class="banner-3"></a></div>
                 </div>
             </div>
             <!-- mobile banner轮播 -->
-            <div class="swiper mySwiper1 mobile">
+            <div class="swiper mySwiper1 mobile" style="margin-top: 62px;">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href=""><img src="./images/mobile/BANNER-01.jpg" alt="" class="banner-1"></a></div>
-                    <div class="swiper-slide"><a href=""><img src="./images/mobile/BANNER-02.jpg" alt="" class="banner-2"></a></div>
+                    <div class="swiper-slide"><a href="https://appj6jizzxd7790.h5.xiaoeknow.com/p/decorate/page/eyJpZCI6IjMxODc1MjcifQ" target="_blank"><img src="./images/mobile/BANNER-01.jpg" alt="" class="banner-1"></a></div>
+                    <div class="swiper-slide"><a href="https://appj6jizzxd7790.h5.xiaoeknow.com/p/decorate/page/eyJpZCI6IjMxODc1MjcifQ" target="_blank"><img src="./images/mobile/BANNER-02.jpg" alt="" class="banner-2"></a></div>
                     <div class="swiper-slide"><a href="https://host.huiju.cool/p/b9534" target="_blank"><img src="./images/mobile/BANNER-03.jpg" alt="" class="banner-3"></a></div>
                 </div>
             </div>
@@ -167,13 +180,13 @@
                     <div class="hrequity_bottom ">
                             <div class="hrequity_bottom_img pc">
                                 <a class="quanyilink" href="https://learn.ddileaf.com/all/11696994?navIndex=1&from_tag=1" target="_blank"><img src="./images/V2专属权益图-01.png" alt="" class="quanyiimg"></a>
-                                <a class="quanyilink" href="https://learn.ddileaf.com/page/4102185" target="_blank"><img src="./images/V2专属权益图-01.png" alt="" class="quanyiimg"></a>
-                                <a class="quanyilink" href="https://learn.ddileaf.com/page/1078328?navIndex=2" target="_blank"><img src="./images/V2专属权益图-01.png" alt="" class="quanyiimg"></a>
+                                <a class="quanyilink" href="https://learn.ddileaf.com/page/4102185" target="_blank"><img src="./images/V2专属权益图-02.png" alt="" class="quanyiimg"></a>
+                                <a class="quanyilink" href="https://learn.ddileaf.com/page/1078328?navIndex=2" target="_blank"><img src="./images/V2专属权益图-03.png" alt="" class="quanyiimg"></a>
                             </div>
                             <div class="hrequity_bottom_img mobile" style="display: none;">
                                 <a class="quanyilink" href="https://learn.ddileaf.com/all/11696994?navIndex=1&from_tag=1" target="_blank"><img src="./images/V2专属权益图-01.png" alt="" class="quanyiimg"></a>
-                                <a class="quanyilink" href="https://learn.ddileaf.com/page/4102185" target="_blank"><img src="./images/V2专属权益图-01.png" alt="" class="quanyiimg"></a>
-                                <a class="quanyilink" href="https://learn.ddileaf.com/page/1078328?navIndex=2" target="_blank"><img src="./images/V2专属权益图-01.png" alt="" class="quanyiimg"></a>
+                                <a class="quanyilink" href="https://learn.ddileaf.com/page/4102185" target="_blank"><img src="./images/V2专属权益图-02.png" alt="" class="quanyiimg"></a>
+                                <a class="quanyilink" href="https://learn.ddileaf.com/page/1078328?navIndex=2" target="_blank"><img src="./images/V2专属权益图-03.png" alt="" class="quanyiimg"></a>
                             </div>
                             <div class="hrequity_bottom_dot">
                                 <ul class="hrequity_bottom_dot_ul">
@@ -199,9 +212,6 @@
                         <div class="pc" style="position: relative;">
                             <a href="https://host.huiju.cool/p/85b60" target="_blank"><img src="./images/应用场景button-01.png" alt="" class="appbtn"></a>
                             <img src="./images/应用场景button-02.png" alt="" style="padding-left: 10px;cursor: pointer;" class="appbtn clickererima">
-                            <div class="erweima">
-                                <img src="./images/wxewm.jpg" alt="">
-                            </div>
                         </div>
                     </div>
                     <div class="part04_tab">
@@ -230,10 +240,13 @@
                                         <p><span></span>管理、评估团队的绩效并与下属沟通绩效考核</p>
                                     </div>
                                     <div class="step_right pad48">
-                                        <p>推荐产品：英跃®《团队领导力·综合能力训练营》</p>
-                                            <p>1599/人，15人起</p>
+                                        <ul style="display: flex;">
+                                            <li><p>推荐产品：</p></li>
+                                            <li><p><span></span>英跃®《团队领导力·综合能力训练营》</p>
+                                                <p><span></span>1599/人，15人起</p></li>
+                                        </ul> 
                                             <ul style="display: flex;">
-                                                <li><p>课程组合：</p></li>
+                                                <li><p>推荐课程：</p></li>
                                                 <li><p><span></span>角色认知</p>
                                                     <p><span></span>目标制定</p>
                                                     <p><span></span>任务授权</p>
@@ -263,10 +276,13 @@
                                         <p><span></span> 创造激励环境，提升员工敬业度和人才留任率</p>
                                     </div>
                                     <div class="step_right pad48">
-                                        <p>推荐课程组合：英跃®《团「对」领导力·综合能力训练营》</p>
-                                            <p>1599/人，15人起</p>
+                                        <ul style="display: flex;">
+                                            <li><p>推荐产品：</p></li>
+                                            <li><p><span></span>英跃®《团「对」领导力·综合能力训练营》</p>
+                                                <p><span></span>1599/人，15人起</p></li>
+                                        </ul> 
                                             <ul style="display: flex;">
-                                                <li><p>课程组合：</p></li>
+                                                <li><p>推荐课程：</p></li>
                                                 <li><p><span></span>Strong Start</p>
                                                     <p><span></span>目标选才</p>
                                                     <p><span></span>高绩效团队</p>
@@ -293,9 +309,14 @@
                                         <p><span></span> 以战带练：发展性任务指派，及时反馈与辅导</p>
                                     </div>
                                     <div class="step_right pad48">
-                                        <p>推荐产品组合：潜·能Plus测评+英跃®专项能力训练营</p>
+                                        <ul style="display: flex;">
+                                            <li><p>推荐产品：</p></li>
+                                            <li><p><span></span> 潜·能Plus测评</p>
+                                                <p><span></span> 英跃®专项能力训练营</p>
+                                            </li>
+                                        </ul> 
                                             <ul style="display: flex;">
-                                                <li><p>高潜人才能力提升建议：</p></li>
+                                                <li><p>推荐课程：</p></li>
                                                 <li><p><span></span> 计划与组织</p>
                                                     <p><span></span> 推动创新</p>
                                                     <p><span></span> 领导力精要</p>
@@ -324,16 +345,22 @@
                                         <p><span></span>管理、评估团队的绩效并与下属沟通绩效考核</p>
                                     </div>
                                     <div class="step_right pad48">
-                                        <p>推荐产品组合：DDI全面个性测试+人才测评启程课/突破营+英跃®专项能力训练营</p>
+                                        <ul style="display: flex;">
+                                            <li class="lengthli"><p>推荐产品：</p></li>
+                                            <li><p><span></span> DDI全面个性测试</p>
+                                                <p><span></span> 人才测评启程课/突破营</p>
+                                                <p><span></span> 英跃®专项能力训练营</p>
+                                        </ul>
                                             <ul style="display: flex;">
-                                                <li><p>全面个性测试五大维度：</p></li>
+                                                <li class="lengthli"><p>推荐课程：
+                                                    <p class="lengthlitwop">(含28个个性因子指标)</p>               
+                                                </p></li>
                                                 <li><p><span></span> 思维与开放</p>
                                                     <p><span></span> 人际与协作</p>
                                                     <p><span></span> 处事与内驱</p>
                                                     <p><span></span> 外向与影响</p>
                                                     <p><span></span> 情绪与应变</p></li>
-                                            </ul>  
-                                            <p>含28个个性因子指标</p>                                       
+                                            </ul>                          
                                     </div>   
                                 </div>
                                 <div class="hengxian"></div> 
@@ -357,9 +384,15 @@
                                         <p><span></span>制定对业务有影响的关键岗位人才培养计划</p>
                                     </div>
                                     <div class="step_right pad48">
-                                        <p>推荐产品组合：敏捷建模+积木测评+英跃®专项能力训练营</p>
+                                        <ul style="display: flex;">
+                                            <li><p>推荐产品：</p></li>
+                                            <li><p><span></span>敏捷建模</p>
+                                                <p><span></span>积木测评</p>
+                                                <p><span></span>英跃®专项能力训练营</p>
+                                            </li>
+                                        </ul>  
                                             <ul style="display: flex;">
-                                                <li><p>能力建议：</p></li>
+                                                <li><p>推荐课程：</p></li>
                                                 <li><p><span></span>问题分析与解决</p>
                                                     <p><span></span>影响力</p>
                                                     <p><span></span>推动创新</p>
@@ -386,16 +419,22 @@
                                         <p><span></span>一脉相承的人才发展计划</p>
                                     </div>
                                     <div class="step_right pad48">
-                                        <p>推荐产品组合：Talent Dynamics人才管理系统+英跃®专项能力训练营</p>
+                                        <ul style="display: flex;">
+                                            <li class="lengthli"><p>推荐产品：</p></li>
+                                            <li><p><span></span>Talent Dynamics人才管理系统</p>
+                                                <p><span></span>英跃®专项能力训练营</p>
+                                            </li>
+                                        </ul>  
                                             <ul style="display: flex;">
-                                                <li><p>英跃®能力包含四大维度：</p></li>
+                                                <li class="lengthli"><p>推荐课程：
+                                                    <p class="lengthlitwop">(共18门中基层管理课程)</p>               
+                                                </p></li>
                                                 <li><p><span></span>自我认知</p>
                                                     <p><span></span>人际管理</p>
                                                     <p><span></span>业务管理</p>
                                                     <p><span></span>团队管理</p>
                                                 </li>
-                                            </ul>  
-                                            <p>共18门中基层管理课程</p>                                                    
+                                            </ul>                                            
                                    </div>                                  
                                 </div>
                                 <div class="hengxian"></div> 
@@ -419,9 +458,15 @@
                                         <p><span></span>报告直白易懂，无需复杂解读</p>
                                     </div>
                                     <div class="step_right pad48">
-                                        <p>推荐产品组合：测评包年计划+人才测评赋能课+英跃®目标选才</p>
+                                        <ul style="display: flex;">
+                                            <li><p>推荐产品：</p></li>
+                                            <li><p><span></span>测评包年计划</p>
+                                                <p><span></span>人才测评赋能课</p>
+                                                <p><span></span>英跃®目标选才</p>
+                                            </li>
+                                        </ul>    
                                             <ul style="display: flex;">
-                                                <li><p>DDI测评产品包含：</p></li>
+                                                <li><p>推荐课程：</p></li>
                                                 <li><p><span></span>全面个性测试</p>
                                                     <p><span></span>情景式能力测评</p>
                                                     <p><span></span>潜·能+测评</p>
@@ -453,7 +498,7 @@
                                     </div>
                                     <div class="step_right pad48">
                                             <ul style="display: flex;">
-                                                <li><p>推荐课程组合：</p></li>
+                                                <li><p>推荐课程：</p></li>
                                                 <li><p><span></span>绩效管理</p>
                                                     <p><span></span>领导团队</p>
                                                     <p><span></span>辅导他人</p>
@@ -480,7 +525,7 @@
                                     </div>
                                     <div class="step_right pad48">
                                             <ul style="display: flex;">
-                                                <li><p>推荐课程组合：</p></li>
+                                                <li><p>推荐课程：</p></li>
                                                 <li>
                                                     <p><span></span>建立伙伴关系</p>
                                                     <p><span></span>高效沟通</p>
@@ -509,7 +554,7 @@
                                     </div>
                                     <div class="step_right pad48">
                                             <ul style="display: flex;">
-                                                <li><p>推荐课程组合：</p></li>
+                                                <li><p>推荐课程：</p></li>
                                                 <li><p><span></span>执行力</p>
                                                     <p><span></span>绩效管理</p>
                                                     <p><span></span>计划与组织</p>
@@ -519,17 +564,14 @@
                                 </div>
                                 <div class="hengxian"></div>  
                             </div>
-                            <div class="hengxian"></div>
                         </div>
                     </div>
                 </div>
             </div>  
             <div class="mobile" style="position: relative;justify-content: center;padding: 0 0 6vw;">
-                <a href="https://host.huiju.cool/p/85b60" target="_blank"><img src="./images/应用场景button-01.png" alt="" class="appbtn"></a>
-                <img src="./images/应用场景button-02.png" alt="" style="padding-left: 10px;cursor: pointer;" class="appbtn clickererima">
-                <div class="erweima">
-                    <img src="./images/wxewm.jpg" alt="">
-                </div>
+                <a href="https://host.huiju.cool/p/85b60" target="_blank"><img src="./images/mobile/应用场景button-01.png" alt="" class="appbtn"></a>
+                <img src="./images/mobile/应用场景button-02.png" alt="" style="padding-left: 10px;cursor: pointer;" class="appbtn clickererima">
+                
             </div>      
         </div>
         <div class="cpart05">
@@ -548,46 +590,59 @@
 
 
                 <div class="pc" style="display: flex; justify-content: space-evenly; padding-bottom: 57px;">
-                    <div class="jointly">
-                        <img src="./images/联名会员卡-01.png" alt="">
-                            <p>DDI知识派 × HRflag联名卡</br>
-                            企业会员￥30000/年</p>
-                            <p class="origcolor">立省￥7808</p>
-                    </div>
-                    <div class="jointly">
-                        <img src="./images/联名会员卡-02.png" alt="">
-                            <p>DDI知识派 × 培伴联名卡</br>
-                                企业会员￥15600/年</p>
-                            <p class="origcolor">立省￥10360</p>
-                    </div>
-                    <div class="jointly">
-                        <img src="./images/联名会员卡-03.png" alt="">
-                            <p>DDDI知识派畅学卡</br>
-                                个人会员￥1899/年</p>
-                            <p class="origcolor">立省￥1788</p>
-                    </div>
+                    <a href="https://appj6jizzxd7790.h5.xiaoeknow.com/p/course/column/p_6544bb6ee4b023c044f7eaa8">
+                        <div class="jointly">
+                            <img src="./images/联名会员卡-01.png" alt="">
+                                <p>DDI知识派 × HRflag联名卡</br>
+                                企业会员￥30000/年</p>
+                                <p class="origcolor">立省￥7808</p>
+                        </div>
+                    </a>
+                    <a href="https://appj6jizzxd7790.h5.xiaoeknow.com/p/course/column/p_65422e85e4b064a82f13694c">
+                        <div class="jointly">
+                            <img src="./images/联名会员卡-02.png" alt="">
+                                <p>DDI知识派 × 培伴联名卡</br>
+                                    企业会员￥15600/年</p>
+                                <p class="origcolor">立省￥10360</p>
+                        </div>
+                    </a>
+                    <a href="https://appj6jizzxd7790.h5.xiaoeknow.com/p/course/column/p_6544bbb5e4b04c100fc224b5">
+                        <div class="jointly">
+                            <img src="./images/联名会员卡-03.png" alt="">
+                                <p>DDI知识派畅学卡</br>
+                                    个人会员￥1899/年</p>
+                                <p class="origcolor">立省￥1788</p>
+                        </div>
+                    </a>
+                    
                 </div>
                 <div class="mobile" style="justify-content: space-evenly; padding-bottom: 57px;">
                         <div class="swiper mySwiper swiper-container">
                             <div class="swiper-wrapper">
-                            <div class="swiper-slide"><div class="jointly">
-                                <img src="./images/联名会员卡-01.png" alt="">
-                                    <p>DDI知识派 × HRflag联名卡</br>
-                                    企业会员￥30000/年</p>
-                                    <p class="origcolor">立省￥7808</p>
-                            </div></div>
-                            <div class="swiper-slide"><div class="jointly">
-                                <img src="./images/联名会员卡-02.png" alt="">
-                                    <p>DDI知识派 × 培伴联名卡</br>
-                                        企业会员￥15600/年</p>
-                                    <p class="origcolor">立省￥10360</p>
-                            </div></div>
-                            <div class="swiper-slide"><div class="jointly">
-                                <img src="./images/联名会员卡-03.png" alt="">
-                                    <p>DDDI知识派畅学卡</br>
-                                        个人会员￥1899/年</p>
-                                    <p class="origcolor">立省￥1788</p>
-                            </div></div>
+                            <div class="swiper-slide"><a href="https://appj6jizzxd7790.h5.xiaoeknow.com/p/course/column/p_6544bb6ee4b023c044f7eaa8">
+                                <div class="jointly">
+                                    <img src="./images/联名会员卡-01.png" alt="">
+                                        <p>DDI知识派 × HRflag联名卡</br>
+                                        企业会员￥30000/年</p>
+                                        <p class="origcolor">立省￥7808</p>
+                                </div>
+                            </a></div>
+                            <div class="swiper-slide"> <a href="https://appj6jizzxd7790.h5.xiaoeknow.com/p/course/column/p_65422e85e4b064a82f13694c">
+                                <div class="jointly">
+                                    <img src="./images/联名会员卡-02.png" alt="">
+                                        <p>DDI知识派 × 培伴联名卡</br>
+                                            企业会员￥15600/年</p>
+                                        <p class="origcolor">立省￥10360</p>
+                                </div>
+                            </a></div>
+                            <div class="swiper-slide"> <a href="https://appj6jizzxd7790.h5.xiaoeknow.com/p/course/column/p_6544bbb5e4b04c100fc224b5">
+                                <div class="jointly">
+                                    <img src="./images/联名会员卡-03.png" alt="">
+                                        <p>DDI知识派畅学卡</br>
+                                            个人会员￥1899/年</p>
+                                        <p class="origcolor">立省￥1788</p>
+                                </div>
+                            </a></div>
                             </div>
                         </div>
                     <!-- <div class="jointly">
@@ -612,7 +667,12 @@
             </div>
         </div>
     </div>
-    
+    <!-- 二维码弹窗 -->
+    <div class="popup">
+        <div class="erweima">
+            <img src="./images/wxerweima.png" alt="">
+        </div>
+    </div>
 </body>
 
 <!-- Initialize Swiper -->
@@ -621,20 +681,20 @@
      loop: true,
       paginationClickable: true,
       autoplay: { //匀速滚动
-                delay: 1000, //间隔时间10秒
+                delay: 5000, //间隔时间10秒
                 stopOnLastSlide: false,
                 disableOnInteraction: false, //触摸后仍然执行
             }
     });
 
     var swiper = new Swiper('.swiper-container',{
-		  allowTouchMove: true,
+        allowTouchMove: true,
 		  centeredSlides: true,
 		  spaceBetween : 30,
 		  slidesOffsetBefore: 0,
-		  loop: true,
+		//   loop: true,
 		  slidesPerView : 'auto',
-          pagination: {
+                pagination: {
         // el: ".swiper-pagination",
         clickable: true,
         },
@@ -645,7 +705,7 @@
       slidesPerView: 8,
       direction: getDirection(),
       autoplay: { //匀速滚动
-                delay: 1000, //间隔时间10秒
+                delay: 3000, //间隔时间10秒
                 stopOnLastSlide: false,
                 disableOnInteraction: false, //触摸后仍然执行
             }

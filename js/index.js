@@ -86,17 +86,21 @@ $(document).ready(function(){
         })
 
         // 点击详情咨询弹出二维码
-        $('.clickererima').click(function(){
-            $('.erweima').css('display','block')
+        $('.clickererima').click(function(){   
+                $('.popup').show();
         })
-        
-        $(window).scroll(function(){
-            $('.erweima').css('display','none')
+
+        $('.popup').click(function(){
+                $('.popup').hide();
         })
+
+        // $(window).scroll(function(){
+        //     $('.erweima').css('display','none');
+        // })
 
         var winWidth = window.screen.width;
         // alert(winWidth);
-        if (winWidth <= 900){
+        if (winWidth <= 600){
             $('.step').hover(function(){
                 $(this).children('.step_bottom').css('display','block');
                 })
@@ -129,9 +133,7 @@ $(document).ready(function(){
                     $(this).children('.vipimg').removeClass('scaleimg');
                     $(this).siblings().children('.vipimg').removeClass('scaleimg');
                     })
+
         }
   });
-
-//   $('.swiper-wrapper').eq(3).parent().children().css('transform','translate3d(-123.75px, 0px, 0px)');
-//   $('.swiper-wrapper').eq(4).parent().children().css('transform','translate3d(-123.75px, 0px, 0px)');
   
