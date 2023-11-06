@@ -14,15 +14,15 @@
 <style>
     .swiper-slide {
   width: 50%;
-}
+    }
 
-.swiper-slide:nth-child(2n) {
+    .swiper-slide:nth-child(2n) {
   width: 50%;
-}
+    }
 
-.swiper-slide:nth-child(3n) {
+    .swiper-slide:nth-child(3n) {
   width: 50%;
-}
+    }
     .swiper-slide-active {
       transform: scale(1.2);
     }
@@ -83,7 +83,7 @@
                 </div>
             </div>
             <div class="part02_part mobile">
-                <div class="swiper mySwiper swiper-container">
+                <div class="swiper mySwiper3 swiper-container">
                     <div class="swiper-wrapper">
                     <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-01.png" alt="" class="vipimg vipimgone"></div></div>
                     <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-02.png" alt="" class="vipimg vipimgtwo"></div></div>
@@ -609,7 +609,7 @@
                     
                 </div>
                 <div class="mobile" style="justify-content: space-evenly; padding-bottom: 57px;">
-                        <div class="swiper mySwiper swiper-container">
+                        <div class="swiper mySwiper4 swiper-container">
                             <div class="swiper-wrapper">
                             <div class="swiper-slide"><a href="https://appj6jizzxd7790.h5.xiaoeknow.com/p/course/column/p_6544bb6ee4b023c044f7eaa8">
                                 <div class="jointly">
@@ -679,7 +679,7 @@
             }
     });
 
-    var swiper2 = new Swiper('.swiper-container',{
+    var swiper2 = new Swiper('.mySwiper3',{
         allowTouchMove: true,
 		  centeredSlides: true,
 		  spaceBetween : 30,
@@ -703,17 +703,29 @@
         },
       },
 		});
-     console.log(swiper2[0].activeIndex,'Slide changed');
-        console.log(swiper2[0])
-        swiper2[0].on('slideChange', function () {
-            if (swiper2[0].activeIndex === 3) {
-                swiper2[0].allowSlideNext = false;
+     console.log(swiper2.activeIndex,'Slide changed');
+        console.log(swiper2)
+        swiper2.on('slideChange', function () {
+            if (swiper2.activeIndex === 3) {
+                swiper2.allowSlideNext = false;
             } else {
-                swiper2[0].allowSlideNext = true;
+                swiper2.allowSlideNext = true;
             }
             });
 
 
+     var swiper4 = new Swiper('.mySwiper4',{
+        allowTouchMove: true,
+		  centeredSlides: true,
+		  spaceBetween : 30,
+		  slidesOffsetBefore: 0,
+		  loop: true, //设置循环
+		  slidesPerView : 'auto',
+        pagination: {
+        // el: ".swiper-pagination",
+        clickable: true,
+        },
+		});
             
 
     var swiper3 = new Swiper('.mySwiper2', {
