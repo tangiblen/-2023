@@ -684,34 +684,37 @@
 		  centeredSlides: true,
 		  spaceBetween : 30,
 		  slidesOffsetBefore: 0,
-		  loop: true, //设置循环
-		  slidesPerView : 'auto',
+		//   loop: true, //设置循环
+		  slidesPerView : 'auto',          
+          loopedSlides:3,
         pagination: {
         // el: ".swiper-pagination",
         clickable: true,
         },
         on: {
         slideChange: function () {
-          // 在滑动后触发事件，可以在这里绑定自定义操作
-        //   if (swiper.activeIndex === 2) {
-        //         swiper.allowSlideNext = false;
-        //   }  else {
-        //         swiper.allowSlideNext = true;
-        //   }
+        //     if(swiper2) {
+		// 	  console.log(swiper2.activeIndex)
+			  
+		// 	   if (swiper2.activeIndex === 2) {
+		// 	        swiper2.allowSlideNext = false;
+		// 	  }  else {
+		// 	        swiper2.allowSlideNext = true;
+		// 	  } 
+		//   }
 
-        //   console.log(swiper2.activeIndex,'Slide changed');
         },
       },
 		});
-     console.log(swiper2.activeIndex,'Slide changed');
-        console.log(swiper2)
-        swiper2.on('slideChange', function () {
-            if (swiper2.activeIndex === 3) {
-                swiper2.allowSlideNext = false;
-            } else {
-                swiper2.allowSlideNext = true;
-            }
-            });
+    //  console.log(swiper2.activeIndex,'Slide changed');
+    //     console.log(swiper2)
+    //     swiper2.on('slideChange', function () {
+    //         if (swiper2.activeIndex === 3) {
+    //             swiper2.allowSlideNext = false;
+    //         } else {
+    //             swiper2.allowSlideNext = true;
+    //         }
+    //         });
 
 
      var swiper4 = new Swiper('.mySwiper4',{

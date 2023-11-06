@@ -101,6 +101,9 @@ $(document).ready(function(){
         var winWidth = window.screen.width;
         // alert(winWidth);
         if (winWidth <= 600){
+
+            swiper2.setTranslate(-130);
+
             $('.step').hover(function(){
                 $(this).children('.step_bottom').css('display','block');
                 })
@@ -146,7 +149,6 @@ $(document).ready(function(){
                           console.log("触发事件");
                         }
                       });
-
         }
   });
   
