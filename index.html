@@ -12,7 +12,7 @@
     <script src="./js/swiper-bundle.min.js"></script>
 </head>
 <style>
-.swiper-slide {
+    .swiper-slide {
   width: 50%;
 }
 
@@ -23,19 +23,9 @@
 .swiper-slide:nth-child(3n) {
   width: 50%;
 }
-
-/* 轮播定制化  --begin*/
-/* .storeActivity-list .swiper-slide{
-    width: 100%!important;
-    margin: 0 5%;
-}
-.swiper-slide-prev{
-    right:8%;
-}
-.swiper-slide-next{
-    left:8%;
-} */
-/* 轮播定制化  --end*/
+    .swiper-slide-active {
+      transform: scale(1.2);
+    }
   </style>
 <body>
     <div class="content">
@@ -48,6 +38,7 @@
                     <div class="swiper-slide"><a href="https://host.huiju.cool/p/b9534" target="_blank"><img src="./images/banner-03.jpg" alt="" class="banner-3"></a></div>
                 </div>
             </div>
+
             <!-- mobile banner轮播 -->
             <div class="swiper mySwiper1 mobile" style="margin-top: 62px;">
                 <div class="swiper-wrapper">
@@ -56,6 +47,7 @@
                     <div class="swiper-slide"><a href="https://host.huiju.cool/p/b9534" target="_blank"><img src="./images/mobile/BANNER-03.jpg" alt="" class="banner-3"></a></div>
                 </div>
             </div>
+
             <!-- logo轮播 -->
             <div class="swiper mySwiper2">
                 <div class="swiper-wrapper">
@@ -65,14 +57,14 @@
                 <div class="swiper-slide"> <div class="borderline"><img src="./images/image (3).png" alt="" class="brandlg"></div> </div>
                 <div class="swiper-slide"> <div class="borderline"><img src="./images/image (4).png" alt="" class="brandlg"></div> </div>
                 <div class="swiper-slide"> <div class="borderline"><img src="./images/image (5).png" alt="" class="brandlg"></div> </div>
-                <div class="swiper-slide"> <div class="borderline"><img src="./images/image (6).png" alt="" class="brandlg"></div> </div>
+                <div class="swiper-slide"> <div class="borderline"><img src="./images/image (6).png" alt="" class="brandlg" style=" width: 56%;height: 166%; position: relative;top: -0.989583vw;"></div> </div>
                 <div class="swiper-slide"> <div class="borderline"><img src="./images/image (7).png" alt="" class="brandlg"></div> </div>
-                <div class="swiper-slide"> <div class="borderline"><img src="./images/image (8).png" alt="" class="brandlg"></div> </div>
-                <div class="swiper-slide"> <div class="borderline"><img src="./images/image (9).png" alt="" class="brandlg"></div> </div>
+                <div class="swiper-slide"> <div class="borderline"><img src="./images/image (8).png" alt="" class="brandlg" style=" width: 40%;height: 100%;"></div> </div>
+                <div class="swiper-slide"> <div class="borderline"><img src="./images/image (9).png" alt="" class="brandlg" style=" width: 56%;height: 170%; position: relative;top: -0.989583vw;"></div> </div>
                 <div class="swiper-slide"> <div class="borderline"><img src="./images/image (10).png" alt="" class="brandlg"></div> </div>
                 <div class="swiper-slide"> <div class="borderline"><img src="./images/image (11).png" alt="" class="brandlg"></div> </div>
                 <div class="swiper-slide"> <div class="borderline"><img src="./images/image (12).png" alt="" class="brandlg"></div> </div>
-                <div class="swiper-slide"> <div class="borderline"><img src="./images/image (13).png" alt="" class="brandlg"></div> </div>
+                <div class="swiper-slide"> <div class="borderline"><img src="./images/image (13).png" alt="" class="brandlg" style=" width: 80%;height: 140%; position: relative;top: -0.583vw;"></div> </div>
                 <div class="swiper-slide"> <div class="borderline"><img src="./images/image (14).png" alt="" class="brandlg"></div> </div>
                 <div class="swiper-slide"> <div class="borderline"><img src="./images/image (15).png" alt="" class="brandlg"></div> </div>
                 <div class="swiper-slide"> <div class="borderline"><img src="./images/image (16).png" alt="" class="brandlg"></div> </div>
@@ -677,7 +669,7 @@
 
 <!-- Initialize Swiper -->
 <script>
-    var swiper = new Swiper(".mySwiper1", {
+    var swiper1 = new Swiper(".mySwiper1", {
      loop: true,
       paginationClickable: true,
       autoplay: { //匀速滚动
@@ -687,20 +679,44 @@
             }
     });
 
-    var swiper = new Swiper('.swiper-container',{
+    var swiper2 = new Swiper('.swiper-container',{
         allowTouchMove: true,
 		  centeredSlides: true,
 		  spaceBetween : 30,
 		  slidesOffsetBefore: 0,
-		//   loop: true,
+		  loop: true, //设置循环
 		  slidesPerView : 'auto',
-                pagination: {
+        pagination: {
         // el: ".swiper-pagination",
         clickable: true,
         },
-		});
+        on: {
+        slideChange: function () {
+          // 在滑动后触发事件，可以在这里绑定自定义操作
+        //   if (swiper.activeIndex === 2) {
+        //         swiper.allowSlideNext = false;
+        //   }  else {
+        //         swiper.allowSlideNext = true;
+        //   }
 
-    var swiper = new Swiper('.mySwiper2', {
+        //   console.log(swiper2.activeIndex,'Slide changed');
+        },
+      },
+		});
+     console.log(swiper2[0].activeIndex,'Slide changed');
+        console.log(swiper2[0])
+        swiper2[0].on('slideChange', function () {
+            if (swiper2[0].activeIndex === 3) {
+                swiper2[0].allowSlideNext = false;
+            } else {
+                swiper2[0].allowSlideNext = true;
+            }
+            });
+
+
+            
+
+    var swiper3 = new Swiper('.mySwiper2', {
       loop: true,
       slidesPerView: 8,
       direction: getDirection(),

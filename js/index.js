@@ -134,6 +134,19 @@ $(document).ready(function(){
                     $(this).siblings().children('.vipimg').removeClass('scaleimg');
                     })
 
+                    $("#slideTrigger").scroll(function() {
+                        var elem = $(this);
+                        var scrollHeight = elem.prop("scrollHeight"); // 获取滚动内容的总高度
+                        var scrollTop = elem.scrollTop(); // 获取当前滚动位置的高度
+                        var visibleHeight = elem.height(); // 获取可见区域的高度
+                      
+                        // 判断是否达到触发条件（滑动到底部）
+                        if (scrollHeight - scrollTop === visibleHeight) {
+                          // 在此处执行触发的操作
+                          console.log("触发事件");
+                        }
+                      });
+
         }
   });
   
