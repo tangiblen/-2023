@@ -100,9 +100,6 @@ $(document).ready(function(){
 
         var winWidth = window.screen.width;
         if (winWidth <= 600){
-            // $(document).ready(function(){
-            //     swiper2.setTranslate(-130);
-            // })
             $('.step').hover(function(){
                 $(this).children('.step_bottom').css('display','block');
                 })

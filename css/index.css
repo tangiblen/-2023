@@ -782,13 +782,6 @@ span {
   height: 7.97398vw;
 }
 
-/* .erweima {
-  width: 48.0104vw;
-  height: 55.8333vw;
-  top: -60.03125vw;
-  left: 40%;
-} */
-
 .mhrequity_bottom_img {
   padding:0 4.16667vw 2.288vw;
   justify-content: center;
@@ -799,7 +792,7 @@ span {
 }
 
 .vipimgdiv {
-    padding: 17vw 1.041667vw 1.041667vw;
+    padding: 16vw 1.041667vw 1.041667vw;
 }
 
 .swiper-slide {
