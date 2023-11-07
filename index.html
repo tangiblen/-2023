@@ -82,9 +82,9 @@
             <div class="part02_part mobile">
                 <div class="swiper mySwiper3 swiper-container">
                     <div class="swiper-wrapper">
-                    <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-02.png" alt="" class="vipimg vipimgtwo"></div></div>
-                    <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-01.png" alt="" class="vipimg vipimgone"></div></div>
-                    <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-03.png" alt="" class="vipimg vipimgthree"></div></div>
+                        <div class="swiper-slide"><div class="vipimgdiv"><div class="vipimg vipimgone"></div></div></div>
+                        <div class="swiper-slide"><div class="vipimgdiv"><div class="vipimg vipimgtwo"></div></div></div>
+                        <div class="swiper-slide"><div class="vipimgdiv"><div class="vipimg vipimgthree"></div></div></div>
                     </div>
                 </div>
             </div>
@@ -681,41 +681,53 @@
 		  centeredSlides: true,
 		  spaceBetween : 40,
 		  slidesOffsetBefore: 0,
-		//   loop: true, //设置循环
+		  loop: true, //设置循环
 		  slidesPerView : 'auto',          
           loopedSlides:3,
+          initialSize:1,
         pagination: {
-        // el: ".swiper-pagination",
-        clickable: true,
+        // el: ".swiper-pagination", 
         },
         on: {
-        slideChange: function () {
-            if (swiper2.activeIndex === 0) {
-                $('.vipimgtwo').addClass('minscaleimg');
-                $('.vipimgone').removeClass('minscaleimg');
-                $('.vipimgthree').removeClass('minscaleimg');
-                $('.v2part').css('display','block');
-                $('.hrpart').css('display','none');
-                $('.v1part').css('display','none');
-            } else if (swiper2.activeIndex === 1 ) {
-                $('.vipimgtwo').removeClass('minscaleimg');
+        slideChangeTransitionEnd: function () {
+            console.log(swiper2,'Slide changed');
+            if(swiper2){
+                console.log(swiper2.realIndex)
+                if (swiper2.realIndex === 1) {
+                swiper2.allowSlideNext = false;
+            } else if (swiper2.realIndex === 2){
+                swiper2.allowSlidePrev = false;
+            } else {
+                swiper2.allowSlideNext = true;
+                swiper2.allowSlidePrev = true;
+            }
+            if (swiper2.realIndex === 0) {
                 $('.vipimgone').addClass('minscaleimg');
-                $('.vipimgthree').removeClass('minscaleimg');
-                $('.v1part').css('display','none');
-                $('.hrpart').css('display','block');
-                $('.v2part').css('display','none');
-            } else if (swiper2.activeIndex === 2) {
-                $('.vipimgone').removeClass('minscaleimg');
                 $('.vipimgtwo').removeClass('minscaleimg');
+                $('.vipimgthree').removeClass('minscaleimg');
+                $('.v2part').css('display','none');
+                $('.hrpart').css('display','block');
+                $('.v1part').css('display','none');
+            } else if (swiper2.realIndex === 1 ) {
+                $('.vipimgone').removeClass('minscaleimg');
+                $('.vipimgtwo').addClass('minscaleimg');
+                $('.vipimgthree').removeClass('minscaleimg');
+                $('.v1part').css('display','block');
+                $('.hrpart').css('display','none');
+                $('.v2part').css('display','none');
+            } else if (swiper2.realIndex === 2) {
+                $('.vipimgtwo').removeClass('minscaleimg');
+                $('.vipimgone').removeClass('minscaleimg');
                 $('.vipimgthree').addClass('minscaleimg');
                 $('.v2part').css('display','block');
                 $('.hrpart').css('display','none');
                 $('.v1part').css('display','none');
             }
-
+            }
         },
       },
 		});
+
 
 
      var swiper4 = new Swiper('.mySwiper4',{

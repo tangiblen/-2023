@@ -99,11 +99,10 @@ $(document).ready(function(){
         // })
 
         var winWidth = window.screen.width;
-        // alert(winWidth);
         if (winWidth <= 600){
-            $(document).ready(function(){
-                swiper2.setTranslate(-130);
-            })
+            // $(document).ready(function(){
+            //     swiper2.setTranslate(-130);
+            // })
             $('.step').hover(function(){
                 $(this).children('.step_bottom').css('display','block');
                 })
@@ -130,7 +129,12 @@ $(document).ready(function(){
                     $('.appli2').css('background-image','url(./images/mobile/应用场景按钮-06.png)');
                     $('.appli3').css('background-image','url(./images/mobile/应用场景按钮-07.png)');
                     $('.appli4').css('background-image','url(./images/mobile/应用场景按钮-08.png)');
-                })           
+                })  
+
+                $('.vipimgdiv').hover(function(){
+                    $(this).children('.vipimg').removeClass('scaleimg');
+                    $(this).siblings().children('.vipimg').removeClass('scaleimg');
+                })      
 
                 $('.vipimgone').addClass('minscaleimg');
         }

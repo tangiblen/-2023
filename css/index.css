@@ -204,7 +204,7 @@ span {
 
 .minscaleimg {
   transform: scale(1.1);
-  transition:0.5s
+  transition:0.3s
 }
 
 .part04_part {
@@ -477,7 +477,7 @@ span {
 }
 
 .hrequity_bottom_dot_ul {
-  padding: 0 5.20833vw;
+  padding: 0 4.20833vw;
 }
 
 .pad48 ul li:nth-child(1) {
@@ -594,6 +594,8 @@ span {
   .vipimg {
     width: 55.555vw;
     height: 46.6667vw;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .vipequity {
@@ -809,6 +811,18 @@ span {
   height: 104.8333vw;
   top: 27vw;
   left: 4vw;
+}
+
+.vipimgone {
+  background-image: url(../images/mobile/会员卡-01.png);
+}
+
+.vipimgtwo {
+  background-image: url(../images/mobile/会员卡-02.png);
+}
+
+.vipimgthree {
+  background-image: url(../images/mobile/会员卡-03.png);
 }
 
 }
