@@ -171,11 +171,11 @@ span {
 
 .hrequity_bottom_dot_ul {
   display: flex;
-  padding: 0 100px;
+  padding: 0 70px;
 }
 
 .hrequity_bottom_dot_ul li {
-  width: 150px;
+  width: 160px;
   height: 137px;
   text-align: center;
   padding: 0 12px;
@@ -592,7 +592,7 @@ span {
   }
 
   .vipimg {
-    width: 55.555vw;
+    width: 50.555vw;
     height: 46.6667vw;
     background-repeat: no-repeat;
     background-size: contain;
@@ -702,7 +702,7 @@ span {
 }
 
 .pad48 ul li:nth-child(1) {
-  width: 20vw;
+  width: 30vw;
 }
 
 .pad48 ul li:nth-child(2) {
@@ -792,7 +792,7 @@ span {
 }
 
 .vipimgdiv {
-    padding: 16vw 1.041667vw 1.041667vw;
+    padding: 20vw 1.041667vw 1.041667vw;
 }
 
 .swiper-slide {

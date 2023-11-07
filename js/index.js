@@ -99,7 +99,7 @@ $(document).ready(function(){
         // })
 
         var winWidth = window.screen.width;
-        if (winWidth <= 600){
+        if (winWidth <= 900){
             $('.step').hover(function(){
                 $(this).children('.step_bottom').css('display','block');
                 })
@@ -127,6 +127,10 @@ $(document).ready(function(){
                     $('.appli3').css('background-image','url(./images/mobile/应用场景按钮-07.png)');
                     $('.appli4').css('background-image','url(./images/mobile/应用场景按钮-08.png)');
                 })  
+
+                $('.step').hover(function(){
+                    $(this).children('.step_bottom').css('display','block');
+                    })
 
                 $('.vipimgdiv').hover(function(){
                     $(this).children('.vipimg').removeClass('scaleimg');
