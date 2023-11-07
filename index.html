@@ -13,18 +13,15 @@
 </head>
 <style>
     .swiper-slide {
-  width: 50%;
+        width: 50%;
     }
 
     .swiper-slide:nth-child(2n) {
-  width: 50%;
+        width: 50%;
     }
 
     .swiper-slide:nth-child(3n) {
-  width: 50%;
-    }
-    .swiper-slide-active {
-      transform: scale(1.2);
+        width: 50%;
     }
   </style>
 <body>
@@ -85,8 +82,8 @@
             <div class="part02_part mobile">
                 <div class="swiper mySwiper3 swiper-container">
                     <div class="swiper-wrapper">
-                    <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-01.png" alt="" class="vipimg vipimgone"></div></div>
                     <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-02.png" alt="" class="vipimg vipimgtwo"></div></div>
+                    <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-01.png" alt="" class="vipimg vipimgone"></div></div>
                     <div class="swiper-slide"><div class="vipimgdiv"><img src="./images/会员卡-03.png" alt="" class="vipimg vipimgthree"></div></div>
                     </div>
                 </div>
@@ -682,7 +679,7 @@
     var swiper2 = new Swiper('.mySwiper3',{
         allowTouchMove: true,
 		  centeredSlides: true,
-		  spaceBetween : 30,
+		  spaceBetween : 40,
 		  slidesOffsetBefore: 0,
 		//   loop: true, //设置循环
 		  slidesPerView : 'auto',          
@@ -693,28 +690,32 @@
         },
         on: {
         slideChange: function () {
-        //     if(swiper2) {
-		// 	  console.log(swiper2.activeIndex)
-			  
-		// 	   if (swiper2.activeIndex === 2) {
-		// 	        swiper2.allowSlideNext = false;
-		// 	  }  else {
-		// 	        swiper2.allowSlideNext = true;
-		// 	  } 
-		//   }
+            if (swiper2.activeIndex === 0) {
+                $('.vipimgtwo').addClass('minscaleimg');
+                $('.vipimgone').removeClass('minscaleimg');
+                $('.vipimgthree').removeClass('minscaleimg');
+                $('.v2part').css('display','block');
+                $('.hrpart').css('display','none');
+                $('.v1part').css('display','none');
+            } else if (swiper2.activeIndex === 1 ) {
+                $('.vipimgtwo').removeClass('minscaleimg');
+                $('.vipimgone').addClass('minscaleimg');
+                $('.vipimgthree').removeClass('minscaleimg');
+                $('.v1part').css('display','none');
+                $('.hrpart').css('display','block');
+                $('.v2part').css('display','none');
+            } else if (swiper2.activeIndex === 2) {
+                $('.vipimgone').removeClass('minscaleimg');
+                $('.vipimgtwo').removeClass('minscaleimg');
+                $('.vipimgthree').addClass('minscaleimg');
+                $('.v2part').css('display','block');
+                $('.hrpart').css('display','none');
+                $('.v1part').css('display','none');
+            }
 
         },
       },
 		});
-    //  console.log(swiper2.activeIndex,'Slide changed');
-    //     console.log(swiper2)
-    //     swiper2.on('slideChange', function () {
-    //         if (swiper2.activeIndex === 3) {
-    //             swiper2.allowSlideNext = false;
-    //         } else {
-    //             swiper2.allowSlideNext = true;
-    //         }
-    //         });
 
 
      var swiper4 = new Swiper('.mySwiper4',{
@@ -745,7 +746,6 @@
     function getDirection() {
       var windowWidth = window.innerWidth;
       var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-
       return direction;
     }
 

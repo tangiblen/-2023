@@ -101,9 +101,9 @@ $(document).ready(function(){
         var winWidth = window.screen.width;
         // alert(winWidth);
         if (winWidth <= 600){
-
-            swiper2.setTranslate(-130);
-
+            $(document).ready(function(){
+                swiper2.setTranslate(-130);
+            })
             $('.step').hover(function(){
                 $(this).children('.step_bottom').css('display','block');
                 })
@@ -132,23 +132,7 @@ $(document).ready(function(){
                     $('.appli4').css('background-image','url(./images/mobile/应用场景按钮-08.png)');
                 })           
 
-                $('.vipimgdiv').hover(function(){
-                    $(this).children('.vipimg').removeClass('scaleimg');
-                    $(this).siblings().children('.vipimg').removeClass('scaleimg');
-                    })
-
-                    $("#slideTrigger").scroll(function() {
-                        var elem = $(this);
-                        var scrollHeight = elem.prop("scrollHeight"); // 获取滚动内容的总高度
-                        var scrollTop = elem.scrollTop(); // 获取当前滚动位置的高度
-                        var visibleHeight = elem.height(); // 获取可见区域的高度
-                      
-                        // 判断是否达到触发条件（滑动到底部）
-                        if (scrollHeight - scrollTop === visibleHeight) {
-                          // 在此处执行触发的操作
-                          console.log("触发事件");
-                        }
-                      });
+                $('.vipimgone').addClass('minscaleimg');
         }
   });
   
