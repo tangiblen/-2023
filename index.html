@@ -74,7 +74,7 @@
         <div class="cpart02">
             <div class="part02_part pc_content pc">
                 <div class="vipequity">
-                    <div class="vipimgdiv"><img src="./images/会员卡-01.png" alt="" class="vipimg scaleimg vipimgone"></div>
+                    <div class="vipimgdiv"><img src="./images/会员卡-01.png" alt="" class="vipimg vipimgone scaleimg"></div>
                     <div class="vipimgdiv"><img src="./images/会员卡-02.png" alt="" class="vipimg vipimgtwo"></div>
                     <div class="vipimgdiv"><img src="./images/会员卡-03.png" alt="" class="vipimg vipimgthree"></div>
                 </div>
@@ -655,9 +655,7 @@
 		  centeredSlides: true,
 		  spaceBetween : 40,
 		  slidesOffsetBefore: 0,
-		  loop: true, //设置循环
 		  slidesPerView : 'auto',          
-          loopedSlides:3,
           initialSize:1,
         pagination: {
         // el: ".swiper-pagination", 
@@ -665,20 +663,10 @@
         on: {
         slideChangeTransitionEnd: function () {
             if(swiper2){
-                if (swiper2.realIndex === 1) {
-                swiper2.allowSlideNext = false;
-            } else if (swiper2.realIndex === 2){
-                swiper2.allowSlidePrev = false;
-            } else {
-                swiper2.allowSlideNext = true;
-                swiper2.allowSlidePrev = true;
-            }
             if (swiper2.realIndex === 0) {
                 $('.vipimgone').addClass('minscaleimg');
                 $('.vipimgtwo').removeClass('minscaleimg');
                 $('.vipimgthree').removeClass('minscaleimg');
-                // $('.vipimgtwo').fadeIn();
-                // $('.vipimgthree').fadeIn();
                 $('.v2part').css('display','none');
                 $('.hrpart').css('display','block');
                 $('.v1part').css('display','none');
@@ -686,8 +674,6 @@
                 $('.vipimgone').removeClass('minscaleimg');
                 $('.vipimgtwo').addClass('minscaleimg');
                 $('.vipimgthree').removeClass('minscaleimg');
-                // $('.vipimgthree').fadeOut();
-                // $('.vipimgtwo').fadeIn();
                 $('.v1part').css('display','block');
                 $('.hrpart').css('display','none');
                 $('.v2part').css('display','none');
@@ -695,8 +681,6 @@
                 $('.vipimgtwo').removeClass('minscaleimg');
                 $('.vipimgone').removeClass('minscaleimg');
                 $('.vipimgthree').addClass('minscaleimg');
-                // $('.vipimgtwo').fadeOut();;
-                // $('.vipimgthree').fadeIn();
                 $('.v2part').css('display','block');
                 $('.hrpart').css('display','none');
                 $('.v1part').css('display','none');

@@ -121,16 +121,26 @@ span {
 .vipequity {
   display: flex;
   position: absolute;
-  top: 205px;
+  height: 400px;
+  top: 179px;
   padding: 0 40px;
+  align-items: center;
+  justify-content: center;
 }
+
+  .scaleimg {
+    /* transform: scale(1.25); */
+    transition:0.5s;
+    height: 400px !important;
+    width: 476.25px !important;
+  }
 
 .lengthli {
   width: 200px !important;
 }
 
 .vipimgdiv {
-  padding: 20px 30px 0;
+  padding: 10px 10px 0;
 }
 
 .vipimg {
@@ -195,11 +205,6 @@ span {
 
 .v1part,.v2part {
   display: none;
-}
-
-.scaleimg {
-  transform: scale(1.25);
-  transition:0.5s
 }
 
 .minscaleimg {
@@ -415,12 +420,13 @@ span {
   }
   
   .vipequity {
-    top: 12.292vw;
+    top: 8.4vw;
     padding: 0px 3.708vw;
+    height: 24vw;
   }
   
   .vipimgdiv {
-    padding: 0 1.2667vw;
+    padding: 0 .4667vw;
   }
   
   .vipimg {
@@ -470,6 +476,13 @@ span {
   .quanyilink {
     width: 20.46875vw;
     height: 23.9583vw;
+  }
+
+  .scaleimg {
+    /* transform: scale(1.25); */
+    transition:0.5s;
+    height: 20vw !important;
+    width: 24vw !important;
   }
 
   .hrequity_bottom_img a:nth-child(2) {
@@ -592,8 +605,8 @@ span {
   }
 
   .vipimg {
-    width: 50.555vw;
-    height: 46.6667vw;
+    width: 50.555vw !important;
+    height: 46.6667vw !important;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -792,7 +805,7 @@ span {
 }
 
 .vipimgdiv {
-    padding: 20vw 1.041667vw 1.041667vw;
+    padding: 22vw 1.041667vw 1.041667vw;
 }
 
 .swiper-slide {

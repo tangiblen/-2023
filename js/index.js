@@ -94,9 +94,8 @@ $(document).ready(function(){
                 $('.popup').hide();
         })
 
-        // $(window).scroll(function(){
-        //     $('.erweima').css('display','none');
-        // })
+        $('.mobile .vipimgone').addClass('minscaleimg');
+
 
         var winWidth = window.screen.width;
         if (winWidth <= 900){
@@ -136,8 +135,6 @@ $(document).ready(function(){
                     $(this).children('.vipimg').removeClass('scaleimg');
                     $(this).siblings().children('.vipimg').removeClass('scaleimg');
                 })      
-
-                $('.vipimgone').addClass('minscaleimg');
         }
   });
   
